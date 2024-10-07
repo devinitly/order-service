@@ -1,13 +1,23 @@
+# Order Service
 Zadanie techniczne w ramach rekrutacji do firmy Insert
+
+## Wymagania
+* Java 17
+* Apache Maven 3.6.3
+* Docker 27.2.0
 
 Aby uruchomić aplikacje wykonujemy następujące kroki:
 
+## Instrukcja
+
 1. Pakujemy aplikacje za pomocą Mavena:
-
-    ```mvn clean package```
+   ```bash
+   mvn clean package
+   ```
 2. Budujemy i uruchamiamy kontenery z aplikacją oraz MySQL za pomocą komendy:
-
-   ```docker-compose up --build```
+   ```bash
+   docker-compose up --build
+   ```
 
 Aplikacja jest dostępna pod localhost:8080
 
