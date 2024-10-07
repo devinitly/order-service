@@ -33,13 +33,13 @@ public class V1OrderController {
 
     @Operation(description = "Update order status")
     @PatchMapping(path = "/{orderId}")
-    ResponseEntity<Void> updateOrderStatus(@PathVariable String orderId, @RequestBody V1OrderStatus orderStatus) {
+    ResponseEntity updateOrderStatus(@PathVariable String orderId, @RequestBody V1OrderStatus orderStatus) {
         try {
             orderService.updateOrderStatus(Long.parseLong(orderId), OrderStatus.valueOf(orderStatus.name()));
+            return ResponseEntity.ok().build();
         } catch (StatusUpdateNotAllowedException ex) {
-            ResponseEntity.badRequest().body(ex.getMessage());
+            return ResponseEntity.badRequest().body(ex.getMessage());
         }
-        return ResponseEntity.ok().build();
     }
 
     @Operation(description = "Get order details")
