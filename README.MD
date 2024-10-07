@@ -6,8 +6,6 @@ Zadanie techniczne w ramach rekrutacji do firmy Insert
 * Apache Maven 3.6.3
 * Docker 27.2.0
 
-Aby uruchomić aplikacje wykonujemy następujące kroki:
-
 ## Instrukcja
 
 1. Pakujemy aplikacje za pomocą Mavena:
