@@ -13,7 +13,6 @@ import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,7 +27,7 @@ public class OrderServiceTest {
     @BeforeEach
     void setUp() {
         when(dateProvider.getCurrentDateTime()).thenReturn(LocalDateTime.MAX);
-        repository.db = new HashMap<>();
+        repository.db.clear();
     }
 
     @Test
