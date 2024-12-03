@@ -1,5 +1,4 @@
 # Order Service
-Zadanie techniczne w ramach rekrutacji do firmy Insert
 
 ## Wymagania
 * Java 17
